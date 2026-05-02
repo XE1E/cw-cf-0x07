@@ -63,6 +63,14 @@ void Clockface::setFont(const char *fontName)
   {
     Locator::getDisplay()->setFont(&minute7pt7b);
   }
+  else if (strcmp(fontName, "tomthumb") == 0)
+  {
+    Locator::getDisplay()->setFont(&TomThumb);
+  }
+  else if (strcmp(fontName, "bold") == 0)
+  {
+    Locator::getDisplay()->setFont(&FreeSansBold9pt7b);
+  }
   else
   {
     Locator::getDisplay()->setFont();
